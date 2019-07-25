@@ -4,5 +4,5 @@ from snapshotUpdater import snapshotGetter
 
 def start():
     scheduler = BackgroundScheduler()
-    scheduler.add_job(snapshotGetter.new_Snapshot, 'interval', minutes=1)
+    scheduler.add_job(snapshotGetter.new_Snapshot, 'interval', minutes=30)
     scheduler.start()
