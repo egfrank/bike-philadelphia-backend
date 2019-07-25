@@ -123,18 +123,18 @@ class SnapshotDetail(APIView):
 
 
 
-def index(request):
-    try:
-        snapshot = Snapshot.objects.latest('timestamp') 
+# def index(request):
+#     try:
+#         snapshot = Snapshot.objects.latest('timestamp') 
 
-    except Snapshot.DoesNotExist:
-        raise Http404("No Snapshots in DB")
+#     except Snapshot.DoesNotExist:
+#         raise Http404("No Snapshots in DB")
 
 
-    context = {
-        'snapshot': snapshot
-    }
-    return render(request, 'api/index.html', context)
+#     context = {
+#         'snapshot': snapshot
+#     }
+#     return render(request, 'api/index.html', context)
 
 
 
