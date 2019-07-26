@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-prebuild": "npm install",
+    "heroku-postbuild": "webpack --config webpack.dev.js",
     "start": "./node_modules/.bin/webpack --config webpack.config.js",
     "watch": "npm run start -- --watch"
   },
