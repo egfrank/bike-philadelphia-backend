@@ -18,7 +18,7 @@ import L from 'leaflet';
 
 
 
-const ENDPOINT = 'https://bike-philly.com/api/v1/stations';
+const ENDPOINT = 'https://bike-philly.herokuapp.com/api/v1/stations/';
 
 function createIconImgUrl(icon){
   return `http://openweathermap.org/img/w/${icon}.png`
