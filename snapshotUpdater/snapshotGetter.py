@@ -60,3 +60,9 @@ def new_Snapshot():
         snapshot.save()
         print('saved snapshot')
 
+
+def wakeup_self():
+    url = 'https://bike-philly.herokuapp.com/'
+    rb = requests.get(url, headers=headers)
+    return None
+
