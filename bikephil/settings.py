@@ -74,10 +74,10 @@ TEMPLATES = [
 ]
 
 
-CORS_ORIGIN_WHITELIST = [
+CORS_ORIGIN_WHITELIST = (
+       'http://localhost:3000',
        'https://pedantic-tesla-f4b138.netlify.com',
-       'http://localhost:3000'
-]
+)
 
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ALLOW_CREDENTIALS = False
