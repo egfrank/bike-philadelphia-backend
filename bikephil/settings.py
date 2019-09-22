@@ -77,6 +77,7 @@ TEMPLATES = [
 CORS_ORIGIN_WHITELIST = (
        'http://localhost:3000',
        'https://pedantic-tesla-f4b138.netlify.com',
+       'https://www.bikephiladelphia.xyz'
 )
 
 CORS_ORIGIN_ALLOW_ALL = False
